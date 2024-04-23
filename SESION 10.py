@@ -33,3 +33,7 @@ url = f"jdbc:postgresql://{database_host}:{database_port}/{database_name}"
 # COMMAND ----------
 
 sql_categories = (spark.read.format("jdbc").option("driver", driver).option("url", url).option("dbtable","categories").option("user",user).option("password",password).load())  
+
+# COMMAND ----------
+
+# Grupo creado desde GitHub
