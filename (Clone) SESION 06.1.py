@@ -1,15 +1,4 @@
 # Databricks notebook source
-# DBTITLE 1,1era Opción
-df.display()
-
-# COMMAND ----------
-
-# DBTITLE 1,1era Opción
-# Apagar la configurarción
-spark.conf.unset("fs.azure.account.key."+storage_account_name+".blob.core.windows.net")
-
-# COMMAND ----------
-
 # DBTITLE 1,2da Opción: Blob Storage
 # Segunda conexión con Blob Storage ("Firma de acceso compartido")
 storage_account_name = "g5roxanazarate" 
